@@ -1,0 +1,11 @@
+.Slider {
+    width: 90vw;
+    height: calc(100vh - 60px);
+}
+
+.Slider__container {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

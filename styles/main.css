@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('./header.css');
+@import url('./form.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+[page] {
+    display: none;
+}
+
+.container {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+}
+
+/* Form styles  ---------------- */
+
+.input {
+    height: 20px;
+    padding: 20px;
+    padding-left: 0px;
+    border: none;
+    border-bottom: 1.4px solid #aaa;
+    transition: all 0.26s linear;
+    outline: none;
+    font-size: 16px;
+}
+
+.input:focus {
+    border-bottom: 2px solid #26a69a;
+}
+
+.label {
+    display: block;
+    margin-top: 7px;
+    font-size: 13px;
+    transition: all 0.26s linear;
+    color: #aaa;
+}
+
+.input:focus ~ label {
+    color:#4db6ac;
+    margin-top: -52px;
+}
+
+.button {
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #26a69a;
+    border-radius: 2px;
+    letter-spacing: .5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: #2bbbad;
+    box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------- */

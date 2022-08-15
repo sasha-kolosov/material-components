@@ -1,0 +1,48 @@
+.Form {
+    width: 90vw;
+    height: calc(100vh - 60px);
+}
+
+.Form__container {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form__block {
+    width: 500px;
+    height: 440px;
+    margin-top: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.12);
+    background-color: white;
+}
+
+.Form__title {
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 36px;
+}
+
+.Form__name,
+.Form__email {
+    height: 120px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.Form__name-input,
+.Form__email-input {
+    width: 460px;
+}
+
+.Form__button {
+    height: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Form__button-button {
+    width: 140px;
+}

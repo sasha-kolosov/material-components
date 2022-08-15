@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header class="Header" id="header">
+        <div class="Header__items">
+            <div class="Header__item" path="form">
+                <div class="Header__item-block">Form</div>
+            </div>
+            <div class="Header__item" path="slider">
+                <div class="Header__item-block">Slider</div>
+            </div>
+            <div class="Header__item" path="todo">
+                <div class="Header__item-block">ToDo</div>
+            </div>
+            <div class="Header__item" path="chart">
+                <div class="Header__item-block">Chart</div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="Form" page="form">
+            <div class="Form__container">
+                <div class="Form__block">
+                    <div class="Form__title">
+                        Interview
+                    </div>
+                    <div class="Form__name">
+                        <input type="text" name="name" id="form-name" class="input validate Form__name-input" />
+                        <label for="form-name" class="label">Name</label>
+                    </div>
+                    <div class="Form__email">
+                        <input type="text" name="email" id="form-email" class="input validate Form__email-input" />
+                        <label for="form-email" class="label">Email</label>
+                    </div>
+                    <div class="Form__button">
+                        <button type="button" id="form-submit" class="button Form__button-button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Slider" page="slider">
+            <div class="Slider__container">
+                <div class="Slider__block">
+                    <div class="Slider__left">
+                        <div class="slider-left Slider__left-arrow">
+
+                        </div>
+                    </div>
+                    <div class="slider-items Slider__items">
+                        <div class="slider-item Slider__item">
+                            <div class="Slider__item-img">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div class="slider-item Slider__item">
+                            <div class="Slider__item-img">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div class="slider-item Slider__item">
+                            <div class="Slider__item-img">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div class="slider-item Slider__item">
+                            <div class="Slider__item-img">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div class="slider-item Slider__item">
+                            <div class="Slider__item-img">
+                                <img src="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Slider__right">
+                        <div class="slider-right Slider__right-arrow">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ToDo" page="todo">
+            <h1>ToDo</h1>
+        </div>
+        <div class="Chart" page="chart">
+            <h1>Chart</h1>
+        </div>
+    </div>
+  
+    <script src="./src/modules/router.js"></script>
+    <script src="./src/modules/validate.js"></script>
+
+    <script src="./src/index.js"></script>
+</body>
+</html>

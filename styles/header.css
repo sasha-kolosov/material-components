@@ -1,0 +1,34 @@
+.Header {
+    height: 60px;
+    width: 100vw;
+    background-color: antiquewhite;
+    box-shadow: 0 0 7px #aaa;
+    display: flex;
+    justify-content: center;
+}
+
+.Header__items {
+    width: 40vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.Header__item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.35s ease-in;
+}
+
+.Header__item-block {
+    font-size: 18px;
+}
+
+.Header__item:hover {
+    background-color: rgb(241, 212, 174);
+    opacity: 0.7;
+}
