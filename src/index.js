@@ -1,2 +1,3 @@
-{ new Validate().start() }
+{ new Validate('form').start() }
 
+{ new Slider('slider').start() }

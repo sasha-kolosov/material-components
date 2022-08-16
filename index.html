@@ -27,7 +27,7 @@
     <div class="container">
         <div class="Form" page="form">
             <div class="Form__container">
-                <div class="Form__block">
+                <div class="Form__block" id="form">
                     <div class="Form__title">
                         Interview
                     </div>
@@ -49,42 +49,57 @@
         </div>
         <div class="Slider" page="slider">
             <div class="Slider__container">
-                <div class="Slider__block">
-                    <div class="Slider__left">
-                        <div class="slider-left Slider__left-arrow">
-
+                <div class="slider Slider__block" id="slider">
+                    <div class="slider-arrow-block">
+                        <div class="slider-arrow-left">
+                            <i class="bi bi-chevron-left"></i>
                         </div>
                     </div>
-                    <div class="slider-items Slider__items">
-                        <div class="slider-item Slider__item">
-                            <div class="Slider__item-img">
-                                <img src="" />
+                    <div class="slider-items">
+                        <div class="slider-item">
+                            <div class="Slider__item">
+                                <div class="Slider__item-img" style="background-color: #b2dfdb"></div>
+                                <div class="Slider__item-footer">
+                                    <button type="button" class="Slider__item-button" style="background-color: #b2dfdb">
+                                        Button
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="slider-item Slider__item">
-                            <div class="Slider__item-img">
-                                <img src="" />
+                        <div class="slider-item">
+                            <div class="Slider__item">
+                                <div class="Slider__item-img" style="background-color: #ffe0b2"></div>
+                                <div class="Slider__item-footer">
+                                    <button type="button" class="Slider__item-button" style="background-color: #ffe0b2">
+                                        Button
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="slider-item Slider__item">
-                            <div class="Slider__item-img">
-                                <img src="" />
+                        <div class="slider-item">
+                            <div class="Slider__item">
+                                <div class="Slider__item-img" style="background-color: #ffccbc"></div>
+                                <div class="Slider__item-footer">
+                                    <button type="button" class="Slider__item-button" style="background-color: #ffccbc">
+                                        Button
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="slider-item Slider__item">
-                            <div class="Slider__item-img">
-                                <img src="" />
-                            </div>
-                        </div>
-                        <div class="slider-item Slider__item">
-                            <div class="Slider__item-img">
-                                <img src="" />
+                        <div class="slider-item">
+                            <div class="Slider__item">
+                                <div class="Slider__item-img" style="background-color: #b2ebf2"></div>
+                                <div class="Slider__item-footer">
+                                    <button type="button" class="Slider__item-button" style="background-color: #b2ebf2">
+                                        Button
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="Slider__right">
-                        <div class="slider-right Slider__right-arrow">
-
+                    <div class="slider-arrow-block">
+                        <div class="slider-arrow-right">
+                            <i class="bi bi-chevron-right"></i>
                         </div>
                     </div>
                 </div>
@@ -100,6 +115,7 @@
   
     <script src="./src/modules/router.js"></script>
     <script src="./src/modules/validate.js"></script>
+    <script src="./src/modules/slider.js"></script>
 
     <script src="./src/index.js"></script>
 </body>

@@ -9,9 +9,9 @@
         path: document.querySelectorAll('[path]')
     }   
 
-    ELEMENTS.pages[0].style.display = 'block'
+    ELEMENTS.pages[1].style.display = 'block'
 
-    window.location.hash = '/form'
+    window.location.hash = '/slider'
 
     for(let i = 0; i < ELEMENTS.pages.length; i++) {
 
