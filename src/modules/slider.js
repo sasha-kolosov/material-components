@@ -9,6 +9,30 @@ class Slider {
 
     }
 
+    checkDisabled() {
+
+        if(this.slides[this.slides.length - 1].style.left == '0px') {
+
+            this.arrowRight.classList.add('slider-arrow-disabled')
+
+        } else {
+
+            this.arrowRight.classList.remove('slider-arrow-disabled')
+
+        }
+
+        if(this.slides[0].style.left == '0px') {
+
+            this.arrowLeft.classList.add('slider-arrow-disabled')
+             
+        } else {
+
+            this.arrowLeft.classList.remove('slider-arrow-disabled')
+
+        }
+
+    }
+
     start() {
 
         for(let i = 0; i < this.slides.length; i++) {
@@ -31,6 +55,8 @@ class Slider {
 
                 }
 
+                this.checkDisabled()
+
             })
 
             this.arrowLeft.addEventListener('click', () => {
@@ -45,9 +71,13 @@ class Slider {
 
                 }
 
+                this.checkDisabled()
+
             })
 
         } 
+
+        this.checkDisabled()
 
     }
 }
