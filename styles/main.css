@@ -26,9 +26,6 @@
 
 /* ----------------------------- */
 
-
-
-
 /* Form styles  ---------------- */
 
 .input {
@@ -75,76 +72,6 @@
 
 .submit-button:hover {
     box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.5);
-}
-
-/* ----------------------------- */
-
-
-
-
-/* Slider styles --------------- */
-
-.slider {
-    display: flex;
-}
-
-.slider-arrow-block {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slider-arrow-left,
-.slider-arrow-right {
-    width: 80%;
-    height: 14%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.slider-arrow-left > i,
-.slider-arrow-right > i {
-    display: block;
-    width: 100%;
-    height: 36px;
-    text-align: center;
-}
-
-.slider-items {
-    flex: 8;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider-item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .6s ease-in-out;
-    padding: 5px;
-}
-
-.slider-arrow-disabled {
-    color: #aaa;
-}
-
-.slider-title {
-    padding: 40px;
-    color: white;
-    font-size: 32px;
-}
-
-.slider-text {
-    padding: 40px;
-    padding-top: 0px;
-    color: white;
-    font-size: 18px;
-    line-height: 26px;
 }
 
 /* ----------------------------- */

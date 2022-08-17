@@ -1,52 +1,35 @@
-{
-    // Router
-
-    const pages = {}
-    const path = {}
-
-    const ELEMENTS = {
-        pages: document.querySelectorAll('[page]'),
-        path: document.querySelectorAll('[path]')
-    }   
-
-    ELEMENTS.pages[1].style.display = 'block'
-
-    window.location.hash = '/slider'
-
-    for(let i = 0; i < ELEMENTS.pages.length; i++) {
-
-        pages[`${ELEMENTS.pages[i].getAttribute('page')}`] = ELEMENTS.pages[i]
-
+class Router {
+    constructor() {
+        this.pages = document.querySelectorAll('[page]')
+        this.path = document.querySelectorAll('[path]')
     }
 
-    for(let i = 0; i < ELEMENTS.path.length; i++) {
+    init() {
+        const pages = {}
+        const path = {}
 
-        path[`${ELEMENTS.path[i].getAttribute('path')}`] = ELEMENTS.path[i]
+        this.pages[0].style.display = 'block'
+        window.location.hash = `/${this.path[0].getAttribute('path')}`
 
-    }
-
-    for(let i = 0; i < ELEMENTS.path.length; i++) {
-
-        ELEMENTS.path[i].addEventListener('click', () => {
-
-            window.location.hash = `/${ELEMENTS.path[i].getAttribute('path')}`
-
-        })
-
-    }
-
-    window.addEventListener('hashchange', () => {
-
-        const hash = window.location.hash.slice(2)
-
-        for(let i = 0; i < ELEMENTS.pages.length; i++) {
-
-            ELEMENTS.pages[i].style.display = 'none'
-
+        for(let i = 0; i < this.pages.length; i++) {
+            pages[`${this.pages[i].getAttribute('page')}`] = this.pages[i]
         }
 
-        pages[`${hash}`].style.display = 'block'
+        for(let i = 0; i < this.path.length; i++) {
+            path[`${this.path[i].getAttribute('path')}`] = this.path[i]
+        }
 
-    })
+        for(let i = 0; i < this.path.length; i++) {
+            this.path[i].addEventListener('click', () => {
+                window.location.hash = `/${this.path[i].getAttribute('path')}`
+            })
+        }
 
+        window.addEventListener('hashchange', () => {
+            for(let i = 0; i < this.pages.length; i++) {
+                this.pages[i].style.display = 'none'
+            }
+            pages[`${window.location.hash.slice(2)}`].style.display = 'block'
+        })
+    }
 }

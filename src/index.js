@@ -1,3 +1,3 @@
-{ new Validate('form').start() }
+{ new Router().init() }
 
-{ new Slider('slider').start() }
+{ new Validate('form').start() }
